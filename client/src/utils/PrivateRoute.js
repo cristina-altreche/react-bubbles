@@ -9,7 +9,7 @@ function PrivateRoute(props) {
 
     return (
         <Route 
-        {...rest render={(renderProps) => {
+        {...rest} render={(renderProps) => {
             if (localStorage.getItem('token')) {
                 return <Component {...renderProps} />
             } else {
